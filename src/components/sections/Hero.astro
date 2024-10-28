@@ -1,0 +1,42 @@
+---
+const personalPhoto = 'Jaider-QBM'
+import { basics } from '@/cv';
+import Badge from '@/ui/Badge.astro';
+import FontProfile from '@/components/FontProfile.astro';
+import WorldMap from '@/icons/worldMap.astro';
+import Phone from '@/icons/Phone.astro'
+import Mail from '@/icons/Mail.astro'
+
+const {name, label, location, phone, email, availability } = basics
+const{ city, region, countryCode} = location
+---
+
+<div class="flex justify-center items-center gap-20 flex-wrap-reverse py-20 lg:py-0 w-full  h-full ">
+    <div class="flex flex-col gap-5 max-w-lg">
+        <h1 class="text-4xl font-bold tracking-tight text-gray-800 dark:text-white ">
+            ¡Hola!👋 Soy {name}
+        </h1>
+        <p class="text-xl text-gray-800  dark:text-gray-300">
+            {label}
+        </p>
+        <div class="flex gap-x-7 flex-wrap gap-2">
+            <p class="flex items-center justify-center gap-x-3">
+                <WorldMap class="size-5"/>
+                {city}, {region}, {countryCode}
+            </p>
+
+            <p class="flex items-center justify-center gap-x-3">
+                <Phone class="size-5"/>
+                {phone}
+            </p>
+            <p class="flex items-center justify-center gap-x-3">
+                <Mail class="size-5"/>
+                {email}
+            </p>
+        </div>
+    </div>
+    <div class="flex flex-col justify-center items-center w-auto gap-y-8">
+        <FontProfile/>
+        <Badge>{availability}</Badge>
+    </div>
+</div>

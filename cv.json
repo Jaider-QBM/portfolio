@@ -1,0 +1,248 @@
+{
+    "basics": {
+      "name": "Jaider Quimbaya",
+      "label": "Desarrollador de Software enfocado en crear sistemas innovadores y escalables, con el objetivo de mejorar la eficiencia y brindar soluciones prácticas a problemas complejos.",
+      "image": "./img/profile-font.webp",
+      "iconPhoto": "./iconPhoto.webp",
+      "email": "jaiderstivenquimbaya8@gmail.com",
+      "phone": "(+57) 312 5394850 ",
+      "availability": "disponible para trabajar",
+      "url": "",
+      "summary":["Como desarrollador de software, me motiva la oportunidad de enfrentar retos tecnológicos y encontrar soluciones que aporten un valor real a las personas y a las empresas. A lo largo de mi carrera, he trabajado en proyectos que combinan diseño y funcionalidad, logrando productos digitales escalables y de alto impacto que responden a las necesidades del usuario final. Valoro especialmente el poder colaborar en equipos donde la creatividad y la innovación técnica se combinan para alcanzar objetivos comunes y superar expectativas.", "Me esfuerzo constantemente por perfeccionar mis habilidades y mantenerme actualizado en las últimas tecnologías, siempre buscando la forma de aplicar lo aprendido en cada proyecto. Mi objetivo es desarrollarme en un entorno desafiante, donde pueda contribuir con mis conocimientos en desarrollo web y soluciones backend, y donde también tenga la oportunidad de seguir creciendo profesionalmente. Mi compromiso es con la excelencia y la mejora continua, impulsado por mi pasión por aprender y aportar valor en cada proyecto en el que participo."],
+      "location": {
+        "postalCode": "111061",
+        "city": "Bogota D.C",
+        "countryCode": "CO",
+        "region": "Colombia"
+      },
+      "profiles": [
+        {
+          "network": "LinkedIn",
+          "label": "linkedin",
+          "username": "jaider quimbaya",
+          "url": "https://www.linkedin.com/in/jaider-quimbaya/"
+        },
+        {
+          "network": "GitHub",
+          "label": "github",
+          "username": "Jaider-QBM",
+          "url": "https://github.com/Jaider-QBM"
+        }
+      ]
+    },
+    "work": [
+      {
+        "name": "Teleperformance Colombia S.A.S",
+        "position": "Tecnólogo en Análisis y Desarrollo de Software",
+        "startDate": "Diciembre 16 de 2023",
+        "endDate": "Junio 18 de 2024",
+        "summary":[
+          "Desarrolló y diseñó prototipos de alta fidelidad, implementando funcionalidades del lado del servidor. Optimizó el rendimiento y la escalabilidad de las aplicaciones, garantizando una experiencia de usuario fluida."
+        ],
+        "functions":[
+          "Desarrolle y mantuve aplicaciones web con un enfoque en el desarrollo full stack, trabajando en la creacion de interfaces de usuario y funcionalidades backend.",
+          "Diseñe prototipos de alta fidelidad en figma, aplicando principios avanzados de UI/UX y asegurando un diseño intuitivo y centrado en el usuario.",
+          "Implemente el frontend de aplicaciones utilizando Vue 3 y React.js, con integracion de estilos a traves de CSS y Tailwind CSS para asegurar un diseño moderno y responsive.",
+          "Desarrolle Funcionalidades backend con Laravel, incluyendo la implementacion de Apis RESTful, gestion de usuario y procesos administrativos, y conexion de base de datos MySQL",
+          "Realice pruebas de calidad (QA) automatizadas y manuales para asegurar la funcionalidades, rendimiento y usablidad de las aplicaciones, incluyendo pruebas unitarias, de integracion y end-to-end.",
+          "Colaboré en la recolección de requisitos y en la gestión del ciclo de vida del desarrollo del software utilizando SCRUM, gestionando tareas y sprints en Jira.",
+          "Participé en revisiones de código y optimización de consultas SQL para mejorar el rendimiento del sistema y la seguridad de la aplicación.",
+          "Utilicé Git y GitHub para el control de versiones, gestionando ramas y fusiones para asegurar un flujo de desarrollo ágil y organizado."
+        ]
+      }
+    ],
+    "education": [
+      {
+        "institution": "University",
+        "url": "https://institution.com/",
+        "area": "Software Development",
+        "studyType": "Bachelor",
+        "startDate": "2011-01-01",
+        "endDate": "2013-01-01",
+        "score": "4.0",
+        "courses": [
+          "DB1101 - Basic SQL"
+        ]
+      },
+      {
+        "institution": "University",
+        "url": "https://institution.com/",
+        "area": "Software Development",
+        "studyType": "Bachelor",
+        "startDate": "2011-01-01",
+        "endDate": "2013-01-01",
+        "score": "4.0",
+        "courses": [
+          "DB1101 - Basic SQL"
+        ]
+      }
+    ],
+    "skills": [
+      {
+        "name": "Angular",
+        "network": "Angular",
+        "keywords": [
+          "Framework"
+        ]
+      },
+      {
+        "name": "Astro",
+        "network": "AstroIcon",
+        "keywords": [
+          "Framework"
+        ]
+      },
+      {
+        "name": "React JS",
+        "network": "React",
+        "keywords": [
+          "Biblioteca"
+        ]
+      },
+      {
+        "name": "Vue",
+        "network": "Vue",
+        "keywords": [
+          "Framework"
+        ]
+      },
+      {
+        "name": "Bootstrap",
+        "network": "Bootstrap",
+        "keywords": [
+          "Framework"
+        ]
+      },
+      {
+        "name": "Html",
+        "network": "Html",
+        "keywords": [
+          "Lenguaje"
+        ]
+      },
+      {
+        "name": "CSS",
+        "network": "CSS",
+        "keywords": [
+          "Lenguaje"
+        ]
+      },
+      {
+        "name": "Sass",
+        "network": "Sass",
+        "keywords": [
+          "Lenguaje"
+        ]
+      },
+      {
+        "name": "Tailwind CSS",
+        "network": "TailwindCss",
+        "keywords": [
+          "Framework"
+        ]
+      },
+      {
+        "name": "Flask",
+        "network": "Flask",
+        "keywords": [
+          "Framework"
+        ]
+      },
+      {
+        "name": "Laravel",
+        "network": "Laravel",
+        "keywords": [
+          "Framework"
+        ]
+      },
+      {
+        "name": "Spring",
+        "network": "Spring",
+        "keywords": [
+          "Framework"
+        ]
+      },
+      {
+        "name": "Java",
+        "network": "Java",
+        "keywords": [
+          "Lenguaje"
+        ]
+      },
+      {
+        "name": "JavaScript",
+        "network": "JavaScript",
+        "keywords": [
+          "Lenguaje"
+        ]
+      },
+      {
+        "name": "TypeScript",
+        "network": "TypeScript",
+        "keywords": [
+          "Lenguaje"
+        ]
+      },
+      {
+        "name": "Php",
+        "network": "Php",
+        "keywords": [
+          "Lenguaje"
+        ]
+      },
+      {
+        "name": "Python",
+        "network": "Python",
+        "keywords": [
+          "Lenguaje"
+        ]
+      },
+      {
+        "name": "MySQL",
+        "network": "MySQL",
+        "keywords": [
+          "Base de Datos"
+        ]
+      },
+      {
+        "name": "MongoDB",
+        "network": "MongoDB",
+        "keywords": [
+          "Base de Datos"
+        ]
+      },
+      {
+        "name": "MariaDB",
+        "network": "MariaDB",
+        "keywords": [
+          "Base de Datos"
+        ]
+      }
+    ],
+    "projects": [
+      {
+        "name": "HyperHub",
+        "description": "Este proyecto se enfoca en diseñar un prototipo para una tienda de tecnología especializada en gamers. La tienda ofrece una variedad de productos, desde hardware hasta accesorios, todos pensados para mejorar la experiencia de juego.",
+        "image": "./img/projects/gameStore.webp",
+        "category": ["Prototipos y Diseño UI/UX"],
+        "process":[
+          {
+            "label": "En Curso",
+            "bgColor": "bg-orange-900",
+            "bdColor":"border-orange-600",
+            "textColor": "text-orange-400"
+          }
+        ],
+        "tags":[
+          {
+            "label":"Figma",
+            "network":"Figma",
+            "bgColor":"bg-pink-500/25"
+          }
+        ],
+        "url": "",
+        "github":"",
+        "figma":"https://www.figma.com/design/wqVjKrOlvefJEylIsCpP2L/Untitled?node-id=0-1&t=XbGDsVMxsePAKzJb-1 "
+      }
+    ]
+  }

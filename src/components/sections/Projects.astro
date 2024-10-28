@@ -1,0 +1,143 @@
+---
+import { projects } from '@/cv';
+
+import { setupFiltering } from '@/script/filterProjects.js';
+import type { SocialIcon } from "@/types";
+import LinkButton from '@/ui/LinkButton.astro';
+import GitHub from '@/icons/GitHub.astro';
+import Link from '@/icons/Link.astro';
+import Figma from '@/icons/Figma.astro';
+import FigmaBrand from '@/icons/FigmaBrand.astro';
+
+const optionsProyect = [
+  { title: "Todos", value: "todos" },  // Asegúrate de incluir esta opción para mostrar todos los proyectos
+  { title: "Educativos", value: "educativos" },
+  { title: "Tecnológicos", value: "tecnologicos" },
+  { title: "Desarrollo web", value: "desarrolloweb" },
+  { title: "E-commerce", value: "ecommerce" },
+  { title: "Prototipos y Diseño UI/UX", value: "Prototipos y Diseño UI/UX" }
+];
+
+const SOCIAL_ICONS: SocialIcon = {
+  Figma
+};
+---
+
+<!-- Barra de Opciones -->
+<div class="flex lg:w-3/4 border-[1px] border-white rounded-xl ">
+  {
+    optionsProyect.map(({ title, value }) => (
+      <label class="radio flex flex-grow items-center justify-center rounded-lg p-1 cursor-pointer">
+        <input 
+          type="radio" 
+          name="radio" 
+          value={value} 
+          class="peer hidden"
+        />
+        <span
+          class="text-sm peer-checked:bg-white peer-checked:text-black hover:bg-white/30 p-2 rounded-lg transition duration-700"
+        >
+          {title}
+        </span>
+      </label>
+    ))
+  }
+</div>
+
+<!-- Proyectos -->
+<div id="projectsContainer" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-6">
+  {
+    projects.map(({image, name, category, description, tags, github, url, figma,process}) => (
+      <article class="project-item rounded-lg shadow-md group" data-category={category}>
+        <div class="w-full">
+          <div class="relative flex flex-col items-center m-4 col-span-6 row-span-5 gap-8 transition duration-500 ease-in-out transform shadow-xl overflow-clip rounded-xl sm:rounded-xl md:group-hover:-translate-y-1 md:group-hover:shadow-2xl lg:border lg:border-gray-800 lg:hover:border-gray-700 lg:hover:bg-gray-800/50 md:m-0">
+            <img
+              alt=""
+              class="object-cover object-top w-full transition duration-500 sm:h-full md:scale-110 md:group-hover:scale-105"
+              loading="lazy"
+              src={image}
+            />
+          </div>
+        </div>
+
+        <div class="w-full mt-3 ">
+          <h3 class="text-2xl font-bold text-gray-800 dark:text-gray-100 ">
+            {name}
+          </h3>
+          <span
+            class="text-xs font-normal text-white/25"
+          >
+            {category}
+          </span>
+          <div class="flex flex-wrap mt-3">
+            <ul class="flex flex-row mb-2 gap-x-2">
+              {tags.map(({network, label, bgColor}) => {
+                const Icon = SOCIAL_ICONS[network];
+                return (
+                  <li>
+                    <span
+                      class={`flex gap-x-2 rounded-full ${bgColor} text-white text-xs py-1 px-2 `}
+                    >
+                      <Icon class="size-4" />
+                      {label}
+                    </span>
+                  </li>
+                );
+              })}
+            </ul>
+
+            <div class="mt-2 text-gray-700 dark:text-gray-400">
+              {description}
+              <div class="flex flex-wrap  flex-row mb-2 gap-x-2 mt-5">
+                {
+                  process.map(({label, bgColor, bdColor, textColor}) =>{
+                    return(
+                    <span 
+                      class={`flex gap-x-2 rounded-full ${bgColor} text-xs py-1 px-2  border-[1px] ${bdColor} ${textColor}`}
+                    >
+                      {label}
+                    </span>
+                    )
+                  })
+                }
+              </div>
+            </div>
+            <footer class="flex items-end justify-start mt-4 gap-4 flex-wrap">
+              {
+                github && (
+                  <LinkButton href={github}>
+                    <GitHub class="size-6" />
+                    Code
+                  </LinkButton>
+                )
+              }
+              {
+                url && (
+                  <LinkButton href={url}>
+                    <Link class="size-6" />
+                    Visualizar
+                  </LinkButton>
+                )
+              }
+              {
+                figma && (
+                  <LinkButton href={figma}>
+                    <FigmaBrand class="size-6"/>
+                    Diseño
+                  </LinkButton>
+                )
+              }
+            </footer>
+          </div>
+        </div>
+      </article>
+
+    ))
+  }
+</div>
+
+<p id="noProjectsMessage" class="hidden text-center text-red-500 mt-4 lg:h-96">
+  No tengo ningún proyecto en esta categoría. ¡Espero tener alguno muy pronto!
+</p>
+
+<script type="module" src="/js/filterProjects.js"></script>

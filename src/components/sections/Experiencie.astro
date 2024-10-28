@@ -1,0 +1,44 @@
+---
+import { work } from "@/cv";
+---
+
+<ol class="relative mt-5 ">
+    {
+        work.map(({name,position, startDate, endDate, summary, functions})=>(
+            <li class="">
+                <div
+                    class="relative  ml-12 pb-4 grid before:absolute before:left-[-35px] before:block before:h-full before:border-l-2 before:border-black/20 dark:before:border-white/15 before:content-[''] md:grid-cols-5 md:gap-10 md:space-x-4] "
+                >
+                    <div class="relative pb-12 md:col-span-2">
+                        <div class="sticky top-0">
+                            <span class="text-blue-400 -left-[44px] absolute rounded-full text-5xl">
+                                &bull;
+                            </span>
+                            <h3 class="text-xl font-bold text-blue-400">
+                                {position}
+                            </h3>
+                            <h4 class="font-semibold text-xl text-gray-600 dark:text-white">
+                                {name}
+                            </h4>
+                            <time class="p-0 m-0 text-sm text-gray-600/80 dark:text-white/80">
+                                {startDate} al { endDate }
+                            </time>
+                        </div>
+                    </div>
+                    <div class="relative flex flex-col gap-2 pb-4 text-gray-600 dark:text-gray-300 md:col-span-3 text-sm ">
+                        <p class="text-pretty">{summary}</p>
+                        <ul class="list-disc mx-6">
+                            {
+                                functions.map((paragraph)=>(
+                                    <li class="text-pretty">
+                                        {paragraph}
+                                    </li>
+                                ))
+                            }
+                        </ul>
+                    </div>
+                </div>
+            </li>
+        ))
+    }
+</ol>

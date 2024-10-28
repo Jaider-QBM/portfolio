@@ -1,0 +1,104 @@
+---
+import Bars from "./icons/Bars.astro";
+
+const navItems = [
+    {
+        title: "Inicio",
+        label: "home",
+        url: "/#home",
+    },
+    {
+        title: "Experiencia",
+        label: "experience",
+        url: "/#experience",
+    },
+    {
+        title: "Proyectos",
+        label: "projects",
+        url: "/#projects",
+    },
+    {
+        title: "Sobre mí",
+        label: "aboutme",
+        url: "/#aboutme",
+    },
+    {
+        title: "Habilidades Técnicas",
+        label: "skills",
+        url: "/#skills",
+    },
+];
+---
+
+<header
+    class="flex flex-wrap items-center justify-center mx-auto p-4 w-full fixed z-50 top-0 left-0" 
+>
+    <nav class=" flex flex-wrap justify-between gap-5 w-full xl:w-[1208px]">
+        <ul class="font-medium flex justify-center p-2 md:p-0 rounded-lg md:flex-row md:space-x-8">
+            <li class="flex items-center">
+                <a href="#" class="">ES</a>
+            </li>
+            <li class="flex items-center">
+                <a href="#">CV</a>
+            </li>
+        </ul>
+        
+        <button
+            data-collapse-toggle="navbar-default"
+            type="button"
+            id="buttonNav"
+            class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm rounded-lg md:hidden hover:shadow-lg focus:outline-none focus:ring-2 dark:focus:ring-gray-200 focus:ring-gray-700"
+            aria-controls="navbar-default"
+            aria-expanded="false"
+        >
+            <span class="sr-only">Open main menu</span>
+            <Bars/>
+        </button>
+        <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+            <ul
+                class="font-medium flex flex-col p-4 md:p-0 rounded-lg md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0  md:bg-transparent dark:md:bg-transparent"
+            >
+                {
+                    navItems.map((link) => (
+                        <li class="flex justify-center">
+                            <a 
+                                class="leading-loose relative  before:content-[''] before:w-0 before:h-0.5 before:rounded-sm before:bg-black dark:before:bg-white before:absolute before:bottom-[-.25rem] before:left-1/2 before:transition-[width,left] before:duration-400 hover:before:w-full hover:before:left-0"
+                                aria-label={link.label}
+                                href={link.url}
+                            >
+                                {link.title}  
+                            </a>
+                        </li>
+                    ))
+                }
+            </ul>
+        </div>
+    </nav>
+    
+</header>
+<script>
+    const button = document.getElementById("buttonNav");
+    const menu = document.getElementById("navbar-default");
+
+    button?.addEventListener("click", () => {
+        if (menu?.classList.contains("hidden")) {
+            menu.classList.remove("hidden");
+        } else {
+            menu?.classList.add("hidden");
+        }
+    });
+</script>
+
+<style>
+    header {
+        animation: nav-shadown 1s linear both;
+        animation-timeline: scroll();
+        animation-range: 0 100px;
+    }
+
+    @keyframes nav-shadown {
+        to {
+            @apply shadow-lg  backdrop-blur-sm;
+        }
+    }
+</style>
