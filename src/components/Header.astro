@@ -1,5 +1,6 @@
 ---
-import Bars from "./icons/Bars.astro";
+import Bars from "@/icons/Bars.astro";
+import ThemeToggle from "@/components/ThemeToggle.astro";
 
 const navItems = [
     {
@@ -40,6 +41,9 @@ const navItems = [
             </li>
             <li class="flex items-center">
                 <a href="#">CV</a>
+            </li>
+            <li class="flex items-center">
+                <ThemeToggle/>
             </li>
         </ul>
         

@@ -47,15 +47,15 @@
     };
 ---
 
-<div class="flex flex-wrap items-end  gap-4">
+<div class="flex flex-wrap items-end justify-around  gap-y-4 lg:gap-4 lg:justify-start">
     {
         skills.map(({name, network, keywords})=>{
             const Icon = SOCIAL_ICONS[network];
             return(
-                <div class="flex items-center flex-col border-[1px] dark:border-white/10 rounded drop-shadow-xl w-32 py-5 border-slate-950/10 dark:bg-[rgba(17,17,17,0.9)] bg-black/15">
+                <div class="flex items-center flex-col border-2 dark:border-white/10 rounded drop-shadow-xl w-32 py-5 border-black/10 dark:bg-[rgba(17,17,17,0.9)] bg-black/20">
                     <Icon class="size-14" />
                     <h3 class="font-bold mt-5">{name}</h3>
-                    <p class="flex gap-x-2 rounded-full text-xs  py-1 px-3 bg-gray-900 my-2 text-white/40">{keywords}</p>
+                    <p class="flex gap-x-2 rounded-full text-xs  py-1 px-3 dark:bg-gray-900 my-2 dark:text-white/40 bg-white/50">{keywords}</p>
                 </div>
             )
         })

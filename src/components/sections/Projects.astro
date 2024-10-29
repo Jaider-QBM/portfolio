@@ -35,7 +35,7 @@ const SOCIAL_ICONS: SocialIcon = {
           class="peer hidden"
         />
         <span
-          class="text-sm peer-checked:bg-white peer-checked:text-black hover:bg-white/30 p-2 rounded-lg transition duration-700"
+          class="text-sm dark:peer-checked:bg-white dark:peer-checked:text-black dark:hover:bg-white/30 p-2 rounded-lg transition duration-700 hover:bg-black/20 peer-checked:bg-black peer-checked:text-white"
         >
           {title}
         </span>
@@ -72,12 +72,12 @@ const SOCIAL_ICONS: SocialIcon = {
           </span>
           <div class="flex flex-wrap mt-3">
             <ul class="flex flex-row mb-2 gap-x-2">
-              {tags.map(({network, label, bgColor}) => {
+              {tags.map(({network, label}) => {
                 const Icon = SOCIAL_ICONS[network];
                 return (
                   <li>
                     <span
-                      class={`flex gap-x-2 rounded-full ${bgColor} dark:text-white text-slate-800 text-xs py-1 px-2 `}
+                      class={`flex gap-x-2 rounded-full dark:bg-slate-900 dark:text-white bg-slate-300 text-xs py-1 px-2 `}
                     >
                       <Icon class="size-4" />
                       {label}
@@ -87,14 +87,14 @@ const SOCIAL_ICONS: SocialIcon = {
               })}
             </ul>
 
-            <div class="mt-2 text-gray-700 dark:text-gray-400">
+            <div class="mt-2 text-gray-700 dark:text-gray-400 ">
               {description}
-              <div class="flex flex-wrap  flex-row mb-2 gap-x-2 mt-5">
+              <div class="flex flex-wrap flex-row mb-2 gap-x-2 mt-5">
                 {
-                  process.map(({label, bgColor, bdColor, textColor}) =>{
+                  process.map(({label}) =>{
                     return(
                     <span 
-                      class={`flex gap-x-2 rounded-full ${bgColor} text-xs py-1 px-2  border-[1px] ${bdColor} ${textColor}`}
+                      class={`flex gap-x-2 rounded-full text-xs py-1 px-2 dark:bg-slate-900 bg-slate-300 `}
                     >
                       {label}
                     </span>

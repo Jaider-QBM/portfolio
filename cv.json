@@ -37,17 +37,17 @@
         "startDate": "Diciembre 16 de 2023",
         "endDate": "Junio 18 de 2024",
         "summary":[
-          "Desarrolló y diseñó prototipos de alta fidelidad, implementando funcionalidades del lado del servidor. Optimizó el rendimiento y la escalabilidad de las aplicaciones, garantizando una experiencia de usuario fluida."
+          "Diseñó y desarrolló prototipos de alta fidelidad, implementando funcionalidades tanto en el lado del servidor como en el cliente, con un enfoque en la optimización del rendimiento y la escalabilidad para asegurar una experiencia de usuario fluida."
         ],
         "functions":[
-          "Desarrolle y mantuve aplicaciones web con un enfoque en el desarrollo full stack, trabajando en la creacion de interfaces de usuario y funcionalidades backend.",
-          "Diseñe prototipos de alta fidelidad en figma, aplicando principios avanzados de UI/UX y asegurando un diseño intuitivo y centrado en el usuario.",
-          "Implemente el frontend de aplicaciones utilizando Vue 3 y React.js, con integracion de estilos a traves de CSS y Tailwind CSS para asegurar un diseño moderno y responsive.",
-          "Desarrolle Funcionalidades backend con Laravel, incluyendo la implementacion de Apis RESTful, gestion de usuario y procesos administrativos, y conexion de base de datos MySQL",
-          "Realice pruebas de calidad (QA) automatizadas y manuales para asegurar la funcionalidades, rendimiento y usablidad de las aplicaciones, incluyendo pruebas unitarias, de integracion y end-to-end.",
-          "Colaboré en la recolección de requisitos y en la gestión del ciclo de vida del desarrollo del software utilizando SCRUM, gestionando tareas y sprints en Jira.",
-          "Participé en revisiones de código y optimización de consultas SQL para mejorar el rendimiento del sistema y la seguridad de la aplicación.",
-          "Utilicé Git y GitHub para el control de versiones, gestionando ramas y fusiones para asegurar un flujo de desarrollo ágil y organizado."
+          "Desarrolló y mantuvo aplicaciones web con un enfoque full stack, colaborando en la creación de interfaces de usuario y funcionalidades backend que respondían a los requerimientos del proyecto.",
+          "Diseñó prototipos de alta fidelidad en Figma, aplicando principios avanzados de UI/UX para garantizar un diseño intuitivo y centrado en el usuario.",
+          "Implementó el frontend de aplicaciones utilizando Vue 3 y React.js, integrando estilos con CSS y Tailwind CSS para lograr interfaces modernas y responsivas.",
+          "Desarrolló funcionalidades backend en Laravel, incluyendo la creación de APIs RESTful, la gestión de usuarios y procesos administrativos, y la conexión con bases de datos MySQL",
+          "Realizó pruebas de calidad (QA) tanto automatizadas como manuales, incluyendo pruebas unitarias, de integración y end-to-end, para verificar la funcionalidad, el rendimiento y la usabilidad de las aplicaciones.",
+          "Colaboró en la recolección de requisitos y en la gestión del ciclo de vida del desarrollo de software mediante SCRUM, organizando tareas y sprints en Jira.",
+          "Participó en revisiones de código y en la optimización de consultas SQL, mejorando el rendimiento del sistema y fortaleciendo la seguridad de las aplicaciones.",
+          "Utilizó Git y GitHub para el control de versiones, gestionando ramas y fusiones para asegurar un flujo de trabajo ágil y bien organizado."
         ]
       }
     ],
@@ -227,17 +227,13 @@
         "category": ["Prototipos y Diseño UI/UX"],
         "process":[
           {
-            "label": "En Curso",
-            "bgColor": "bg-orange-900",
-            "bdColor":"border-orange-600",
-            "textColor": "text-orange-400"
+            "label": "En Curso"
           }
         ],
         "tags":[
           {
             "label":"Figma",
-            "network":"Figma",
-            "bgColor":"bg-pink-500/25"
+            "network":"Figma"
           }
         ],
         "url": "",
