@@ -5,13 +5,14 @@ import { setupFiltering } from '@/script/filterProjects.js';
 import type { SocialIcon } from "@/types";
 import LinkButton from '@/ui/LinkButton.astro';
 import GitHub from '@/icons/GitHub.astro';
+import Git from '@/icons/Git.astro';
 import Link from '@/icons/Link.astro';
 import Figma from '@/icons/Figma.astro';
 import FigmaBrand from '@/icons/FigmaBrand.astro';
 
 const optionsProyect = [
   { title: "Todos", value: "todos" },  // Asegúrate de incluir esta opción para mostrar todos los proyectos
-  { title: "Educativos", value: "educativos" },
+  { title: "Educativos", value: "Educativos" },
   { title: "Tecnológicos", value: "tecnologicos" },
   { title: "Desarrollo web", value: "desarrolloweb" },
   { title: "E-commerce", value: "ecommerce" },
@@ -19,7 +20,9 @@ const optionsProyect = [
 ];
 
 const SOCIAL_ICONS: SocialIcon = {
-  Figma
+  Figma,
+  GitHub,
+  Git
 };
 ---
 

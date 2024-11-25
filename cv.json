@@ -239,6 +239,30 @@
         "url": "",
         "github":"",
         "figma":"https://www.figma.com/design/wqVjKrOlvefJEylIsCpP2L/Untitled?node-id=0-1&t=XbGDsVMxsePAKzJb-1 "
+      },
+      {
+        "name": "Curso Profesional de Git y GitHub",
+        "description": "En este curso aprendí a gestionar proyectos de software con Git y GitHub, dominando el control de versiones, la creación y manejo de ramas, la resolución de conflictos y el trabajo colaborativo con Pull Requests.",
+        "image": "./img/projects/cpgitYgithub.webp",
+        "category": ["Educativos"],
+        "process":[
+          {
+            "label": "Terminado"
+          }
+        ],
+        "tags":[
+          {
+            "label":"GitHub",
+            "network":"GitHub"
+          },
+          {
+            "label":"Git",
+            "network":"Git"
+          }
+        ],
+        "url": "",
+        "github":"https://github.com/Jaider-QBM/hyperblog.git",
+        "figma":""
       }
     ]
   }
